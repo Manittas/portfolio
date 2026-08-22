@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Filipe Neves - Vinyl Collection">
+    <title>Vinyl Collection · Filipe Neves</title>
+    <link rel="stylesheet"
+        href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html"
+            class="logo">
+            FILIPE<span>.</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="index.html#about">
+                About
+            </a>
+            <a href="index.html#projects">
+                Projects
+            </a>
+            <a href="index.html#vinyl">
+                Vinyls
+            </a>
+            <a href="index.html#contact">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="collection-page vinyl-page">
+            <div class="section-heading">
+                <p class="eyebrow">
+                    VINYL COLLECTION
+                </p>
+                <h1>
+                    Records I own.
+                </h1>
+                <p class="collection-description">
+                    Click on a record to see a preview of a song from it play!
+                </p>
+            </div>
+            <div id="all-vinyl"
+                class="vinyl-grid vinyl-grid-large">
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="data/vinyl.js"></script>
+    <script src="js/vinyl.js"></script>
+    <script> document.addEventListener("DOMContentLoaded",() => {loadVinyl("all-vinyl");});
+    </script>
+</body>
+
+</html>

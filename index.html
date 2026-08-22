@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Filipe Neves - Personal Portfolio">
+    <title>Filipe's Portfolio</title>
+    <link rel="stylesheet"
+        href="css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a href="index.html"
+            class="logo">
+            FILIPE<span>.</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#about">
+                About
+            </a>
+            <a href="#projects">
+                Projects
+            </a>
+            <a href="#vinyl">
+                Vinyls
+            </a>
+            <a href="#contact">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-decoration decoration-one"></div>
+            <div class="intro-decoration decoration-two"></div>
+            <div class="intro-decoration decoration-three"></div>
+            <div class="intro-content">
+                <p class="eyebrow">
+                    HELLO WORLD!
+                </p>
+                <h1>
+                    I'm Filipe.
+                </h1>
+                <a href="#about"
+                    class="primary-button">
+                    Explore ↓
+                </a>
+            </div>
+        </section>
+
+        <section id="about"
+            class="section about-section">
+            <div class="section-heading">
+                <p class="eyebrow">
+                    01 / ABOUT
+                </p>
+                <h2>
+                    About me.
+                </h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile/profile.jpg">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Hi! I'm Filipe Neves, a Software Engineer from
+                        Portugal. I have a Bachelor's degree in Computer
+                        Science and Engineering, I am currently working
+                        with cloud systems in SAP.
+                    </p>
+                    <p>
+                        My main topics of interest are Cybersecurity,
+                        Software Engineering and Aerospace. Outside of
+                        programming, I enjoy cars, collecting vinyl
+                        records, gardening, games (which I won a major
+                        european tournamentfor a card game) and working
+                        on random personal projects.
+                    </p>
+                    <p>
+                        I am fluent in Portuguese and English yet I
+                        also have intermediate level of Spanish and
+                        beginner level of Dutch.
+                    </p>
+                    <p>
+                        This website's purpose is to showcase my work
+                        experience, projects as well some of my
+                        interest, such as my vinyl collection.
+                    </p>
+                    <div class="about-details">
+                        <div>
+                            <span>
+                                CURRENT WORK
+                            </span>
+                            <strong>
+                                Software Engineer @ SAP
+                            </strong>
+                        </div>
+                        <div>
+                            <span>
+                                BASED IN
+                            </span>
+                            <strong>
+                                Portugal
+                            </strong>
+                        </div>
+                        <div>
+                            <span>
+                                INTERESTS
+                            </span>
+                            <strong>
+                                Music · Technology · Cars
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects"
+            class="section projects-section">
+            <div class="section-heading">
+                <p class="eyebrow">
+                    02 / PROJECTS
+                </p>
+                <h2>
+                    Projects I've built.
+                </h2>
+            </div>
+            <div id="featured-projects"
+                class="projects-grid">
+            </div>
+            <div class="section-footer">
+                <a href="https://github.com/Manittas"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-link">
+                    see more projects...
+                </a>
+            </div>
+        </section>
+
+        <section id="vinyl"
+            class="section vinyl-section">
+            <div class="section-heading">
+                <p class="eyebrow">
+                    03 / VINYLS
+                </p>
+                <h2>
+                    My vinyl collection.
+                </h2>
+            </div>
+            <div id="featured-vinyl"
+                class="vinyl-grid">
+            </div>
+            <div class="section-footer">
+                <a href="vinyls.html"
+                    class="text-link">
+                    see more records...
+                </a>
+            </div>
+        </section>
+
+        <section id="contact"
+            class="section contact-section">
+            <div class="contact-content">
+                <p class="eyebrow">
+                    04 / CONTACT
+                </p>
+                <h2>
+                    Contacts.
+                </h2>
+                <p>
+                    You can connect with me on the following:
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/Manittas"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub ↗
+                    </a>
+                    <a href="https://www.linkedin.com/in/filipe-neves-4bb934216/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+                    <a>
+                        Email: manittashs@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+
+    <script src="data/projects.js"></script>
+    <script src="data/vinyl.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/vinyl.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
