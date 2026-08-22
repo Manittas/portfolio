@@ -442,6 +442,14 @@ a {
     color: var(--yellow);
 }
 
+.vinyl-h2 {
+    margin-bottom: 20px;
+    font-size: clamp(3rem, 7vw, 7rem);
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -0.05em;
+}
+
 .vinyl-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
