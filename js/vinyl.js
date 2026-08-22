@@ -30,7 +30,7 @@ function createVinylCard(vinyl) {
             <p>
                 ${vinyl.artist}
             </p>
-            <small>
+            <small class="song-title">
                 ♪ ${vinyl.song}
             </small>
         </div>

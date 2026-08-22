@@ -482,8 +482,8 @@ a {
 .vinyl-record {
     position: absolute;
     z-index: 1;
-    right: -45%;
-    width: 90%;
+    right: 5%;
+    width: 60%;
     aspect-ratio: 1 / 1;
     background: #151515;
     border-radius: 50%;
@@ -543,7 +543,6 @@ a {
 
 .vinyl-information {
     padding: 18px 5px;
-
 }
 
 .vinyl-information h3 {
@@ -566,16 +565,32 @@ a {
    VINYL PLAYING STATE
    ========================================================= */
 
+.song-title {
+    display: block;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition:
+        opacity 0.3s ease,
+        max-height 0.3s ease;
+}
+
+.vinyl-card.playing
+.song-title {
+    opacity: 1;
+    max-height: 30px;
+}
+
 .vinyl-card.playing
 .album-wrapper {
     transform:
-        scale(0.88)
-        translateX(-8%);
+        scale(0.65)
+        translateX(-26%);
 }
 
 .vinyl-card.playing
 .vinyl-record {
-    right: -5%;
+    right: 5%;
     animation: spin 2s linear infinite;
 }
 
