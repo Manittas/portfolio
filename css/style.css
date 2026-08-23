@@ -917,6 +917,10 @@ a {
     background: var(--orange);
 }
 
+.contact-section .eyebrow {
+    color: var(--text);
+}
+
 .contact-content {
     max-width: 900px;
 }
