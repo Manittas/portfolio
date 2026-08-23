@@ -606,15 +606,15 @@ a {
 }
 
 .project-card:nth-child(3n + 1) {
-    background: #f8dfc6;
+    background: #f2e6b1;
 }
 
 .project-card:nth-child(3n + 2) {
-    background: #dfe8dc;
+    background: #c7ddb5;
 }
 
 .project-card:nth-child(3n + 3) {
-    background: #dce7ee;
+    background: #ffd4a1;
 }
 
 .project-card-top {
