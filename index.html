@@ -23,6 +23,9 @@
             <a href="#about">
                 About
             </a>
+            <a href="#work">
+                Career
+            </a>
             <a href="#projects">
                 Projects
             </a>
@@ -37,9 +40,12 @@
 
     <main>
         <section class="intro">
-            <div class="intro-decoration decoration-one"></div>
-            <div class="intro-decoration decoration-two"></div>
-            <div class="intro-decoration decoration-three"></div>
+            <div class="intro-background">
+                <div class="intro-shape shape-circle"></div>
+                <div class="intro-shape shape-arc"></div>
+                <div class="intro-shape shape-half-circle"></div>
+                <div class="intro-shape shape-small-circle"></div>
+            </div>
             <div class="intro-content">
                 <p class="eyebrow">
                     HELLO WORLD!
@@ -72,27 +78,21 @@
                 <div class="about-text">
                     <p>
                         Hi! I'm Filipe Neves, a Software Engineer from
-                        Portugal. I have a Bachelor's degree in Computer
-                        Science and Engineering, I am currently working
-                        with cloud systems in SAP.
+                        Portugal!
+                    </p>
+                    <p>
+                        I studied in Instituto Superior Técnico and have
+                        a Bachelor's degree in Computer Science and
+                        Engineering. Currently, I am working with cloud
+                        systems in SAP.
                     </p>
                     <p>
                         My main topics of interest are Cybersecurity,
                         Software Engineering and Aerospace. Outside of
                         programming, I enjoy cars, collecting vinyl
                         records, gardening, games (which I won a major
-                        european tournamentfor a card game) and working
+                        european tournament for a card game) and working
                         on random personal projects.
-                    </p>
-                    <p>
-                        I am fluent in Portuguese and English yet I
-                        also have intermediate level of Spanish and
-                        beginner level of Dutch.
-                    </p>
-                    <p>
-                        This website's purpose is to showcase my work
-                        experience, projects as well some of my
-                        interest, such as my vinyl collection.
                     </p>
                     <div class="about-details">
                         <div>
@@ -120,7 +120,41 @@
                             </strong>
                         </div>
                     </div>
+                    <div class="about-skills">
+                        <span class="skills-title">
+                            SKILLS
+                        </span>
+                        <div class="skills-list">
+                            <div>
+                                <span>PROGRAMMING</span>
+                                <strong>Java · JavaScript · Python · PL/SQL · OutSystems · REST APIs</strong>
+                            </div>
+                            <div>
+                                <span>LIBRARIES & FRAMEWORKS</span>
+                                <strong>Node.js · SAPUI5 · Tkinter · Jasmine</strong>
+                            </div>
+                            <div>
+                                <span>SOFTWARE & TOOLS</span>
+                                <strong>Maven · Git · Jenkins · Docker · Jira · Postman</strong>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="work"
+            class="section work-section">
+            <div class="section-heading">
+                <p class="eyebrow">
+                    02 / CAREER
+                </p>
+                <h1>
+                    Work experience.
+                </h1>
+            </div>
+            <div id="experience-container"
+                class="experience-timeline">
             </div>
         </section>
 
@@ -128,7 +162,7 @@
             class="section projects-section">
             <div class="section-heading">
                 <p class="eyebrow">
-                    02 / PROJECTS
+                    03 / PROJECTS
                 </p>
                 <h2>
                     Projects I've built.
@@ -177,7 +211,7 @@
             class="section contact-section">
             <div class="contact-content">
                 <p class="eyebrow">
-                    04 / CONTACT
+                    05 / CONTACT
                 </p>
                 <h2>
                     Contacts.
@@ -208,8 +242,10 @@
          JAVASCRIPT
          ===================================================== -->
 
+    <script src="data/experience.js"></script>
     <script src="data/projects.js"></script>
     <script src="data/vinyl.js"></script>
+    <script src="js/experience.js"></script>
     <script src="js/project.js"></script>
     <script src="js/vinyl.js"></script>
     <script src="js/main.js"></script>

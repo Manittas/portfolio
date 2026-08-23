@@ -1,5 +1,6 @@
 :root {
     --background: #f3ead7;
+    --background-2: #d9cbb0;
     --surface: #fff8e9;
     --text: #29241f;
     --text-light: #71685d;
@@ -8,6 +9,7 @@
     --green: #536b59;
     --blue: #56718d;
     --yellow: #e5b84b;
+    --pastel-yellow: #f2e6b1;
     --pink: #d89091;
     --white: #fffdf7;
 
@@ -115,17 +117,42 @@ a {
 
 .intro {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 70px);
-    padding: 80px 6vw;
+    min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cream);
+}
+
+.intro-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.intro-background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.035) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.035) 1px,
+            transparent 1px
+        );
+    background-size: 35px 35px;
+    pointer-events: none;
 }
 
 .intro-content {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     max-width: 750px;
     text-align: center;
 }
@@ -169,37 +196,50 @@ a {
     box-shadow: 2px 2px 0 var(--text);
 }
 
-.intro-decoration {
+.intro-shape {
     position: absolute;
-    z-index: 1;
+    pointer-events: none;
 }
 
-.decoration-one {
-    top: 15%;
-    left: 8%;
-    width: 90px;
-    height: 90px;
-    background: var(--yellow);
+.shape-circle {
+    width: 420px;
+    height: 420px;
+    top: -100px;
+    left: -80px;
     border-radius: 50%;
+    background: var(--orange);
 }
 
-.decoration-two {
-    right: 8%;
-    top: 25%;
-    width: 110px;
-    height: 110px;
-    background: var(--blue);
-    border-radius: 40% 60% 60% 40%;
+.shape-arc {
+    width: 500px;
+    height: 500px;
+    right: -180px;
+    top: -100px;
+    border-radius: 50%;
+    border: 35px solid var(--green);
+    background: transparent;
+    box-shadow:
+        0 0 0 25px var(--yellow),
+        0 0 0 60px var(--orange);
     transform: rotate(25deg);
 }
 
-.decoration-three {
-    right: 20%;
+.shape-half-circle {
+    width: 320px;
+    height: 160px;
+    bottom: -40px;
+    left: 12%;
+    border-radius: 320px 320px 0 0;
+    background: var(--yellow);
+}
+
+.shape-small-circle {
+    width: 80px;
+    height: 80px;
+    right: 30%;
     bottom: 15%;
-    width: 50px;
-    height: 50px;
-    background: var(--pink);
-    transform: rotate(45deg);
+    border-radius: 50%;
+    background: var(--green);
 }
 
 /* =========================================================
@@ -207,7 +247,7 @@ a {
    ========================================================= */
 
 .section {
-    padding: 80px 6vw;
+    padding: 60px 6vw;
 }
 
 .section-heading {
@@ -279,7 +319,7 @@ a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-top: 40px;
+    margin-top: 32px;
 }
 
 .about-details div {
@@ -302,12 +342,241 @@ a {
     font-size: 0.85rem;
 }
 
+.about-skills {
+    margin-top: 25px;
+    padding: 25px;
+    border: 3px solid var(--text);
+    background: var(--pastel-yellow);
+    color: var(--text);
+    box-shadow: 7px 7px 0 var(--orange);
+}
+
+.skills-title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-list > div {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.skills-list > div:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.skills-list span {
+    font-size: 0.7rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+}
+
+.skills-list strong {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/* =========================================================
+   WORK
+   ========================================================= */
+
+.work-section {
+    background: var(--background);
+}
+
+.experience-timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Central timeline line */
+.experience-timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 3px;
+    transform: translateX(-50%);
+    background: var(--orange);
+}
+
+.experience-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.experience-marker {
+    position: relative;
+    z-index: 2;
+}
+
+.experience-dot {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: var(--yellow);
+    border: 3px solid var(--orange);
+}
+
+.experience-card {
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--green);
+    color: var(--white);
+    border: 3px solid var(--text);
+    border-radius: 4px;
+    box-shadow: 7px 7px 0 var(--orange);
+    cursor: pointer;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 9px 9px 0 var(--orange);
+}
+
+.experience-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+.experience-card h3 {
+    margin: 0;
+    font-size: 1.35rem;
+    font-weight: 900;
+}
+
+.experience-company-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.experience-card h4 {
+    margin: 5px 0 8px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.experience-date {
+    display: inline-block;
+    margin: 5px 0 8px;
+    color: var(--yellow);
+    font-size: 0.9rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.experience-toggle {
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: var(--yellow);
+    color: var(--text);
+    border: 3px solid var(--text);
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: 900;
+    line-height: 1;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.experience-toggle:hover {
+    transform: rotate(90deg);
+}
+
+.experience-description {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease;
+}
+
+.experience-description ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 25px;
+    list-style: none;
+    opacity: 0;
+    transition:
+        opacity 0.25s ease,
+        padding 0.35s ease;
+}
+
+.experience-description li {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.experience-description li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--yellow);
+    font-weight: 900;
+}
+
+/* Open Card */
+.experience-card.open
+.experience-description {
+    grid-template-rows: 1fr;
+}
+
+.experience-card.open
+.experience-description ul {
+    padding: 0 25px 25px;
+    opacity: 1;
+}
+
+.experience-card.open
+.experience-toggle {
+    transform: rotate(0deg);
+}
+
 /* =========================================================
    PROJECTS
    ========================================================= */
 
 .projects-section {
-    background: var(--background);
+    background: var(--background-2);
 }
 
 .projects-grid {
@@ -684,7 +953,7 @@ a {
    TABLET
    ========================================================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .navigation {
         gap: 15px;
     }
@@ -699,6 +968,19 @@ a {
 
     .about-image {
         max-width: 500px;
+    }
+
+    .experience-item {
+        grid-template-columns: 35px 1fr;
+        gap: 20px;
+    }
+
+    .experience-timeline::before {
+        left: 17px;
+    }
+
+    .experience-dot {
+        left: 8px;
     }
 
     .projects-grid {
@@ -718,7 +1000,7 @@ a {
    MOBILE
    ========================================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .site-header {
         padding: 16px 5vw;
     }
@@ -751,6 +1033,50 @@ a {
     .section,
     .collection-page {
         padding: 80px 5vw;
+    }
+
+    .skills-list > div {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .experience-section {
+        padding: 70px 0;
+    }
+
+    .experience-item {
+        grid-template-columns: 30px 1fr;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .experience-timeline::before {
+        left: 14px;
+    }
+
+    .experience-dot {
+        left: 6px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .experience-card-header {
+        padding: 20px;
+    }
+
+    .experience-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .experience-company-date {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .experience-toggle {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
     }
 
     .projects-grid {

@@ -1,8 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
+        loadExperience();
         loadFeaturedProjects();
         loadFeaturedVinyl();
     }
 );
+
+function loadExperience() {
+    const container = document.getElementById("experience-container");
+
+    if (!container) {
+        return;
+    }
+
+    workExperiences.forEach(
+        (experience) => {
+            const card = createWorkCard(experience);
+            container.appendChild(card);
+        }
+    );
+
+    setupExperienceCards();
+}
 
 function loadFeaturedProjects() {
     const container = document.getElementById("featured-projects");
