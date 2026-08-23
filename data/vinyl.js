@@ -43,9 +43,9 @@ const vinyls = [
         album: "A Way To Spend Your Life",
         artist: "N.V. Le Anderen",
         cover: "assets/images/vinyl/NVAnderen_WayLife.png",
-        song: null,
+        song: "The Girl On The Pavement",
         appleTrackId: null,
-        preview: null
+        preview: "./assets/audio/NVAnderen_Pavement.mp3"
     },
     {
         album: "Comedown Machine",
