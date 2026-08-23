@@ -992,13 +992,6 @@ a {
         left: 8%;
     }
 
-    .shape-line {
-        width: 200px;
-        height: 6px;
-        right: 12%;
-        bottom: 22%;
-    }
-
     .shape-small-circle {
         width: 60px;
         height: 60px;
@@ -1086,49 +1079,40 @@ a {
     }
 
     .shape-circle {
-        width: 230px;
-        height: 230px;
-        top: -60px;
-        left: -80px;
+        width: 190px;
+        height: 190px;
+        top: -50px;
+        left: -70px;
     }
 
     .shape-arc {
-        width: 280px;
-        height: 280px;
-        right: -150px;
-        top: 5%;
-        border-width: 22px;
+        width: 220px;
+        height: 220px;
+        right: -125px;
+        top: 8%;
+        border-width: 18px;
         box-shadow:
-            0 0 0 15px var(--yellow),
-            0 0 0 35px var(--orange);
-        transform: rotate(25deg);
+            0 0 0 12px var(--yellow),
+            0 0 0 28px var(--orange);
     }
 
     .shape-half-circle {
-        width: 190px;
-        height: 95px;
-        bottom: -30px;
+        width: 160px;
+        height: 80px;
+        bottom: -25px;
         left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .shape-line {
-        width: 130px;
-        height: 5px;
-        right: -10px;
-        bottom: 25%;
-        transform: rotate(-35deg);
     }
 
     .shape-small-circle {
-        width: 45px;
-        height: 45px;
-        right: 20%;
-        bottom: 12%;
+        width: 35px;
+        height: 35px;
+        right: 18%;
+        bottom: 15%;
     }
 
     .intro-background::after {
-        background-size: 25px 25px;
+        background-size: 22px 22px;
+
     }
 
     .section,
