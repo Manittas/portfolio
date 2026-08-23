@@ -61,13 +61,12 @@ function toggleVinyl(card, vinyl) {
         return;
     }
 
-    // Start animation.
-    card.classList.add("playing");
-    currentlyPlaying = card;
-
-
     // Start Apple preview if exists.
-    if (vinyl.preview) {
+    if (vinyl.preview != null) {
+        // Start animation.
+        card.classList.add("playing");
+        currentlyPlaying = card;
+
         playPreview(vinyl.preview, card);
     }
 }
@@ -117,7 +116,9 @@ function loadVinyl(elementId) {
         return;
     }
 
-    vinyls.forEach(
+    const sortedVinyls = vinyls.sort((a,b) => a.artist.toLowerCase().localeCompare(b.artist.toLowerCase()));
+
+    sortedVinyls.forEach(
         (vinyl) => {
             const card = createVinylCard(vinyl);
             container.appendChild(card);
