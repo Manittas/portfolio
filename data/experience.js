@@ -7,7 +7,8 @@ const workExperiences = [
         description: [
             "<b>Roles:</b> Software Engineer (2026 - Present), Associate Software Engineer (2025 - 2026).",
             "Experience with Java, JavaScript, Node.js, Maven, Docker and Jenkins.",
-            "Supported full-stack development and operation of the BTP Cockpit cloud application."
+            "Supported full-stack development and operation of cloud applications.",
+            "Software engineer for SAP's BTP Cockpit App core development team."
         ]
     },
     {
