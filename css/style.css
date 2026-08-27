@@ -1089,7 +1089,7 @@ a {
         width: 330px;
         height: 330px;
         right: -165px;
-        top: -35px;
+        top: -60px;
         border-width: 22px;
         box-shadow:
             0 0 0 15px var(--yellow),
@@ -1190,29 +1190,4 @@ a {
     .vinyl-player {
         min-height: 280px;
     }
-}
-
-/* =========================================================
-   DARK MODE
-   ========================================================= */
-
-@media (prefers-color-scheme: dark) {
-    .shape-small-circle {
-        background: #6fa58a;
-    }
-
-    .intro-background::after {
-        background-image:
-            linear-gradient(
-                rgba(255, 255, 255, 0.08) 1px,
-                transparent 1px
-            ),
-            linear-gradient(
-                90deg,
-                rgba(255, 255, 255, 0.08) 1px,
-                transparent 1px
-            );
-
-    }
-
 }
