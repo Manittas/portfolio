@@ -1089,7 +1089,7 @@ a {
         width: 250px;
         height: 250px;
         right: -150px;
-        top: 1%;
+        top: -2%;
         border-width: 19px;
         box-shadow:
             0 0 0 13px var(--yellow),
