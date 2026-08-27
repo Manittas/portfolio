@@ -1086,28 +1086,30 @@ a {
     }
 
     .shape-arc {
-        width: 220px;
-        height: 220px;
-        right: -125px;
-        top: 8%;
-        border-width: 18px;
+        width: 330px;
+        height: 330px;
+        right: -165px;
+        top: -35px;
+        border-width: 22px;
         box-shadow:
-            0 0 0 12px var(--yellow),
-            0 0 0 28px var(--orange);
+            0 0 0 15px var(--yellow),
+            0 0 0 35px var(--orange);
+        transform: rotate(25deg);
     }
 
     .shape-half-circle {
-        width: 160px;
-        height: 80px;
-        bottom: -25px;
-        left: 50%;
+        width: 220px;
+        height: 110px;
+        bottom: -30px;
+        left: 35%;
+        transform: translateX(-50%);
     }
 
     .shape-small-circle {
-        width: 35px;
-        height: 35px;
-        right: 18%;
-        bottom: 15%;
+        width: 45px;
+        height: 45px;
+        right: 20%;
+        bottom: 12%;
     }
 
     .intro-background::after {
@@ -1188,4 +1190,29 @@ a {
     .vinyl-player {
         min-height: 280px;
     }
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+@media (prefers-color-scheme: dark) {
+    .shape-small-circle {
+        background: #6fa58a;
+    }
+
+    .intro-background::after {
+        background-image:
+            linear-gradient(
+                rgba(255, 255, 255, 0.08) 1px,
+                transparent 1px
+            ),
+            linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.08) 1px,
+                transparent 1px
+            );
+
+    }
+
 }
