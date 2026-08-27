@@ -16,6 +16,14 @@ const vinyls = [
         preview: "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/fd/64/f9/fd64f9bd-52fc-e383-1c26-a51901ad92d2/mzaf_10117153100071431768.plus.aac.p.m4a"
     },
     {
+        album: "Two Star & the Dream Police",
+        artist: "Mk.gee",
+        cover: "assets/images/vinyl/MKGee_DreamPolice.png",
+        song: "Dream Police",
+        appleTrackId: "1882613507",
+        preview: "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/06/9e/12069e1c-05c8-3a8a-2348-e4a9b13812d2/mzaf_5576859146627139084.plus.aac.p.m4a"
+    },
+    {
         album: "Hybrid Theory",
         artist: "Linkin Park",
         cover: "assets/images/vinyl/LinkinPark_HybridTheory.png",
