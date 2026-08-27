@@ -1086,15 +1086,14 @@ a {
     }
 
     .shape-arc {
-        width: 330px;
-        height: 330px;
-        right: -150px;
-        top: -100px;
-        border-width: 22px;
+        width: 220px;
+        height: 220px;
+        right: -125px;
+        top: 8%;
+        border-width: 18px;
         box-shadow:
-            0 0 0 15px var(--yellow),
-            0 0 0 35px var(--orange);
-        transform: rotate(25deg);
+            0 0 0 12px var(--yellow),
+            0 0 0 28px var(--orange);
     }
 
     .shape-half-circle {
