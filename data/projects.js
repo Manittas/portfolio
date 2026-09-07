@@ -1,7 +1,7 @@
 const projects = [
     {
         title: "Crochet Stitch Counter App",
-        description: "Python desktop application, using Tkinter, that counts crochet stitches across multiple rows. Builder compatible with Windows and macOS.",
+        description: "Python desktop application, using Tkinter, that counts crochet stitches across multiple rows. Includes voice-activated input parsing. Builder compatible with Windows and macOS.",
         technologies: ["Python", "Tkinter"],
         github: "https://github.com/Manittas/Crochet-Stitch-Count-App"
     },
