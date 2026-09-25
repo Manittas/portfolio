@@ -6,7 +6,7 @@ const workExperiences = [
         endDate: "Present",
         description: [
             "<b>Roles:</b> Software Engineer (2026 - Present), Associate Software Engineer (2025 - 2026).",
-            "Software engineer for SAP's BTP Cockpit App core development team.",
+            " Software engineer on SAP's BTP Cockpit core development team.",
             "Developed and maintained full-stack cloud applications using Java, JavaScript and Node.js.",
             "Worked with Maven, Jenkins, Docker, PostgreSQL and Dynatrace across development, testing and operation workflows."
         ]
