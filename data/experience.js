@@ -6,9 +6,9 @@ const workExperiences = [
         endDate: "Present",
         description: [
             "<b>Roles:</b> Software Engineer (2026 - Present), Associate Software Engineer (2025 - 2026).",
-            "Experience with Java, JavaScript, Node.js, Maven, Jenkins, Docker and Dynatrace.",
-            "Supported full-stack development and operation of cloud applications.",
-            "Software engineer for SAP's BTP Cockpit App core development team."
+            "Software engineer for SAP's BTP Cockpit App core development team.",
+            "Developed and maintained full-stack cloud applications using Java, JavaScript and Node.js.",
+            "Worked with Maven, Jenkins, Docker, PostgreSQL and Dynatrace across development, testing and operation workflows."
         ]
     },
     {
@@ -18,8 +18,8 @@ const workExperiences = [
         endDate: "2025",
         description: [
             "<b>Roles:</b> IT Consultant (2025 - 2025), IT Analyst (2024 - 2025), IT Junior Analyst (2023 - 2024).",
-            "Experience with PL/SQL, OutSystems, REST APIs, C# and JavaScript.",
-            "Engineered system architectures, executed end-to-end full-stack migrations and implemented API integrations for multiple systems."
+            "Engineered full-stack migrations, from analyzing existing solutions to implementation and integration.",
+            "Developed solutions using PL/SQL, OutSystems, REST APIs and JavaScript, integrating APIs for interoperability."
         ]
     },
     {
@@ -28,8 +28,8 @@ const workExperiences = [
         startDate: "2022",
         endDate: "2023",
         description: [
-            "Experience with Java, gRPC and Groovy.",
-            "Developed plug-in applications and monitored application servers."
+            "Developed plug-in applications using Java, gRPC and Groovy.",
+            "Monitored application servers and supported the operation of deployed applications."
         ]
     }
 ];
